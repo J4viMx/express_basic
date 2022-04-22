@@ -14,9 +14,15 @@ app.get('/', (req, res) =>{
 })
 
 
-//REspondiendo en /launchx
+//Respondiendo en /launchx
 app.get('/launchx', (req, res) =>{
     res.send('Bienvenidos a launchx')
+})
+
+//Regresar un objeto  en /explorersInNode
+app.get('/explorersInNode', (req, res) =>{
+    const explorer = {name: "Explorer", msg: "Hello"}
+    res.send(explorer)
 })
 
 
