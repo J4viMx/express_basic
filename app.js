@@ -13,8 +13,18 @@ app.get('/', (req, res) =>{
     res.send('Hello World!')
 })
 
+
+//REspondiendo en /launchx
+app.get('/launchx', (req, res) =>{
+    res.send('Bienvenidos a launchx')
+})
+
+
 //Con esto inicializamos esta app
 
 app.listen(port, () =>{
     console.log(`Example app listening on port ${port}`)
 })
+
+
+
